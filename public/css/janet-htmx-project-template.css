@@ -1,0 +1,6 @@
+@media print {
+  /* Add CSS here for stuff you don't want to show up on printed pages (/PDFs), if you're old-school enough to do that kind of thing. */
+   .noprint {
+      visibility: hidden;
+   }
+}

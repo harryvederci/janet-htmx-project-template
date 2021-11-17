@@ -1,0 +1,1 @@
+Updating the checkbox its 'checked' value should return html with the toggled checkbox.

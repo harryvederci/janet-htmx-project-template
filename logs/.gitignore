@@ -1,0 +1,7 @@
+# Keep this dir to not blow up code that assumes it exists,
+# but ignore all of its content except for the .gitignore and
+# (if present) .gitkeep files.
+*
+!*/
+!.gitignore
+!.gitkeep

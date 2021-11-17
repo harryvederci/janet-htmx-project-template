@@ -1,0 +1,7 @@
+/build/
+/dev/db-dev.sqlite
+/dev/db-dev.sqlite-journal
+
+# NOTE: ./deps = symlink to ./dependencies/<operating system name>
+/deps
+/dependencies

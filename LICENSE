@@ -1,0 +1,36 @@
+Well, this isn't really a license yet. In the future this document will contain
+the MIT license.
+
+Until the Circlet server dependency is replaced with something else, this
+codebase should be considered to have the dual GPLv2 / commercial license
+mentioned here:
+  https://github.com/janet-lang/circlet/blob/master/LICENSE
+
+
+After replacing Circlet, I will relicense this codebase to the MIT license.
+For contributors: you have my blessing to use anything in the ./src/ directory
+of this codebase as if it already has the MIT license.
+Contributions are welcome from authors who are OK with the above.
+All contributions *will* be relicensed to the MIT license.
+
+Note that the relicense to the MIT license should be OK, as the licenses of the
+other used libraries are as follows:
+ - janet-html: MIT
+ - json:       MIT
+ - path:       MIT
+ - sqlite:     MIT (= the Janet library. SQLite itself is in the public domain)
+ - testament:  MIT
+
+
+
+echo "OMG what's wrong with the GPL?" > /dev/null
+
+Janet is a relatively young programming language with a seemingly strong
+consensus for using the MIT license in libraries. The fact that I've been able
+to grab all-but-1 library for this codebase without having to think twice (/
+write this dissertation) has been great, and I think at this point in time it
+would be bad for the Janet community if we start "complecting" programming with
+legal work.
+
+I'm very grateful for the work of Richard Stallman and the Free Software
+Foundation, though. Consider donating to the FSF!
