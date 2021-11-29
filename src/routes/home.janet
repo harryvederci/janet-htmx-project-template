@@ -1,6 +1,6 @@
 (use /src/routes/route-paths)
 
-(import /src/html-components/navbar-component)
+(import /src/html-components/hc-navbar)
 (import /src/utils/html-utils)
 
 
@@ -8,7 +8,7 @@
   []
   [:div
    [:p
-    "TODO: change this into a login page."]])
+    "TODO"]])
 
 
 (defn HANDLER
@@ -18,5 +18,6 @@
       :headers {"Content-Type" "text/html"}
       :body (html-utils/create-html5-page
               "janet-htmx-project-template - home"
-              (navbar-component/build)
-              (build-home-page))}))
+              (hc-navbar/build)
+              (build-home-page)
+              nil)}))

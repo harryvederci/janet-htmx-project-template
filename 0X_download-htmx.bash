@@ -1,6 +1,6 @@
 htmx_version=1.6.0
 dir_of_this_file="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-htmx_dir=${dir_of_this_file}/public/js/htmx/${htmx_version}
+htmx_dir=${dir_of_this_file}/public/public/js/htmx/${htmx_version}
 htmx_extensions_dir=${htmx_dir}/ext
 
 

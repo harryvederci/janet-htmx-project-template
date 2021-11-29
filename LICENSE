@@ -15,11 +15,14 @@ All contributions *will* be relicensed to the MIT license.
 
 Note that the relicense to the MIT license should be OK, as the licenses of the
 other used libraries are as follows:
+ - cipher:     MIT
  - janet-html: MIT
  - json:       MIT
  - path:       MIT
  - sqlite:     MIT (= the Janet library. SQLite itself is in the public domain)
+ - suresql:    MIT
  - testament:  MIT
+ - tw:         MIT
 
 
 

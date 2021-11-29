@@ -5,7 +5,7 @@
         :target                   "#new-project-placeholder"
         :empty-placeholder-html   [:div {:id "new-project-placeholder"}]}
   ```
-  [html-element-type wrapped-id-string]
+  [placeholder-html-element-type wrapped-id-string]
   (let [id
         (string wrapped-id-string "-placeholder")
 
@@ -15,7 +15,7 @@
         result
         {:id                       id
          :target                   id-as-target
-         :empty-placeholder-html   [html-element-type {:id id}]}
+         :empty-placeholder-html   [placeholder-html-element-type {:id id}]}
 
         result-keys
         (-> result

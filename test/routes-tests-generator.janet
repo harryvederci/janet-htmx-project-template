@@ -12,8 +12,8 @@
 
 
 (h/for [route-key route-keys]
-  # Example of a route-key: "/todo-list/get-todo-list-component"
-  # (A route-key maps to a `HANDLER` function - the example route-key would map to /src/routes/todo-list/get-todo-list-component.janet its `HANDLER` function.)
+  # Example of a route-key: "/todo-list/get-todo-list"
+  # (A route-key maps to a `HANDLER` function - the example route-key would map to /src/routes/todo-list/get-todo-list.janet its `HANDLER` function.)
   (let [route-HANDLER-fn
         (get all-routes route-key)
 

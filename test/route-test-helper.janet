@@ -4,13 +4,13 @@
   ```
   Example arguments:
     - input-handler
-        get-todo-list-component/HANDLER
+        get-todo-list/HANDLER
     - input
         {:body (json/encode {:todo-list-id 1})}
     - expected-output-status-code
         200
     - path-to-file-with-expected-output
-        "/test/routes/todo-list/get-todo-list-component/1_output.html"
+        "/test/routes/todo-list/get-todo-list/1_output.html"
   ```
   [input-handler
    input

@@ -1,10 +1,37 @@
 (declare-project
-  :name "janet-htmx-project-template"
-  :description "Some boilerplate code, to easily create Janet + HTMX projects. Heavily opiniated about its http routes."
-  :dependencies ["https://github.com/janet-lang/circlet" # janet-lang/circlet is a GPL LICENSED http server.
-                 "https://github.com/janet-lang/json" # janet-lang/json = Encodes and Decodes JSON data and converts it to and from Janet data structures. Note: JSON null becomes the keyword :null.
-                 # "https://github.com/janet-lang/path" # janet-lang/path is needed for swlkr his tailwind library (= in the lib directory)
-                 "https://github.com/janet-lang/sqlite3"])
+  :name
+  "janet-htmx-project-template"
+
+  :description
+  "Some boilerplate code, to easily create Janet + HTMX projects. Heavily opiniated about its http routes."
+
+  :dependencies
+  [# joy-framework/dotenv = to get environment variables from the <project-root>/.env file.
+   "https://github.com/joy-framework/dotenv"
+
+   # janet-lang/jhydro = needed for swlkr his cipher library (= in the lib directory, used to generate encryption keys)
+   "https://github.com/janet-lang/jhydro"
+
+   # janet-lang/circlet = GPLv2 / COMMERCIAL LICENSED http server.
+   "https://github.com/janet-lang/circlet"
+
+   # janet-lang/json = Encodes and Decodes JSON data and converts it to and from Janet data structures. Note: JSON null becomes the keyword :null.
+   "https://github.com/janet-lang/json"
+
+   # janet-lang/path = needed for swlkr his tailwind library (= in the lib directory)
+   "https://github.com/janet-lang/path"
+
+   # janet-lang/sqlite3 = janet bindings for sqlite.
+   # "https://github.com/janet-lang/sqlite3"
+   "https://github.com/harryvederci/sqlite3"
+
+   # joy-framework/http = an http client library.
+   # NOTE: joy-framework/http requires an OS-level dependency:
+   #  - debian/debian-like:       sudo apt install -y libcurl4-openssl-dev
+   #  - fedora/centos/rhel-like:  sudo dnf install libcurl-devel
+   "https://github.com/joy-framework/http"])
+
+
 
 
 #

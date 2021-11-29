@@ -6,7 +6,7 @@
   []
   [:div {:class ["noprint"]}
    [:h3 "Welcome"]
-   [:button {:hx-post >>/todo-list/get-todo-list-component
+   [:button {:hx-post >>/todo-list/get-todo-list
              :hx-ext "json-enc,include-vals"
              :data-include-vals (hxu/incl-vals {:todo-list-id 1})
              :hx-target "#page-content"

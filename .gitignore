@@ -1,3 +1,6 @@
+# NOTE: you will want to ignore the .env file if you use this for anything serious.
+# /.env
+
 /build/
 /dev/db-dev.sqlite
 /dev/db-dev.sqlite-journal
