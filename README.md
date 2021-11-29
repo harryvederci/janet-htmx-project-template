@@ -82,6 +82,9 @@ feature again. Messing up a url string? You cannot imagine ever doing that.
 Agreed, it's ugly, but it's not really important for this template. Also, read
 my personal Janet style guide below to understand why I'm using it for now.
 
+#### WTF is a qualified kebab query?
+I just... had to give it a name, ok?
+
 ### blocking issues
 #### prevent XSS scripting
 (Probably only really an issue if you will allow users to add content, and
