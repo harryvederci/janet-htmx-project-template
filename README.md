@@ -9,6 +9,11 @@ rough, but you'll probably find it interesting regardless.
 The main interesting thing isn't in the usage of htmx yet, but in how I'm
 generating routes through the structure of the project.
 
+Don't take inspiration from how I implemented the login feature with a session
+cookie, as that's very very early stage. (I recently made a small unrelated
+Proof of Concept application that I didn't want to be 100% open to the public,
+and figured I'd merge the changes in here so I'd have a starting point.)
+
 ### no router boilerplate
 You don't have to add routes to a router key-value mapping. Any `.janet`
 file you add to `src/routes/**` will automatically be added to the
@@ -87,9 +92,6 @@ I just... had to give it a name, ok?
 
 ### blocking issues
 #### prevent XSS scripting
-(Probably only really an issue if you will allow users to add content, and
-allow that content to be displayed.)
-
 From the HTMX docs:
 > htmx allows you to define logic directly in your DOM. [...]
 > One concern with this approach, however, is security. This is especially the
