@@ -117,6 +117,37 @@ attributes.
 Should be fixed before launch. Limit amount of chars to something sensible for
 each text column.
 
+## Q&A
+### What's the reasoning behind the SQL double underscores?
+It's an experimental thing I'm doing.
+
+You know how most people have a cutlery drawer where they neatly put their
+forks and knives in, so they can easily pick them out afterwards?
+
+I got rid of that years ago. Well, not of the drawer, but of the compartments.
+I just throw everything in the drawer, making the process of unloading the dish
+washer about 2 times faster. Turns out you can still easily find stuff
+afterwards.
+
+I think by doing the "prefix everything with the table name" thing, I can maybe
+create the same thing when programming, where I just get everything from all
+relevant tables, smash them into one giant hashmap, and pick the relevant stuff
+later. More wasteful? Sure. But I'm willing to find out if it's actually going
+to be painful. Also, I'm pretty confident I can create something later on that
+makes the codebase gradually-stricter-as-needed about this stuff.
+
+The double underscores make things a little bit easier on the eyes when doing
+that. Notice I convert `table_name__column-name` to `:=table-name/column-name`
+in db-helper.janet, so I'm not really looking at the double underscores outside
+of the .sql files.
+
+I'm sure most people will find `:=table-name/column-name` super ugly to read,
+but it does make it very clear when reading code what you're actually looking
+at. In a previous project I noticed I was often reading `:id` in my code. You
+need context when reading a variable name like that. If, instead, you read
+`:=city/id`, you don't need that context. It's always right there, staring you
+in the face :)
+
 
 ## My code style guide (eary draft, please prove me wrong)
 - Database: prefix your ID columns with the table name.
