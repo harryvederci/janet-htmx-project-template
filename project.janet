@@ -63,14 +63,14 @@
   (os/shell "find . -name '*.janet' | entr -r jpm -l janet main.janet"))
 
 
-(declare-executable
-  # jpm is smart enough to figure out from the one entry file what libraries
-  # and other code your executable depends on, and bundles them into the final
-  # application for you.
-  # The final executable will be located at ./build/<:name>
-  # Also note that the entry of an executable file should look different than a
-  # normal Janet script. It should define a main function that can receive a
-  # variable number of parameters, the command-line arguments. It will be
-  # called as the entry point to your executable.
-  :name "janet-htmx-project-template"
-  :entry "main.janet")
+# (declare-executable)
+#   # jpm is smart enough to figure out from the one entry file what libraries
+#   # and other code your executable depends on, and bundles them into the final
+#   # application for you.
+#   # The final executable will be located at ./build/<:name>
+#   # Also note that the entry of an executable file should look different than a
+#   # normal Janet script. It should define a main function that can receive a
+#   # variable number of parameters, the command-line arguments. It will be
+#   # called as the entry point to your executable.
+#   :name "janet-htmx-project-template"
+#   :entry "main.janet"

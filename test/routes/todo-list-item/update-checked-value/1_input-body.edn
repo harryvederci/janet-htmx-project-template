@@ -1,2 +1,2 @@
-{:wish-id 1
- :wish-checked 0}
+{:=todo-list-item/id 1
+ :=todo-list-item/checked 0}

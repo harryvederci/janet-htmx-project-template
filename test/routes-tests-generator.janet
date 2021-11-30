@@ -1,7 +1,6 @@
 (use /src/routes/app-routes)
 (import /src/routes/app-routes)
 (import /src/utils/h)
-(import json)
 (import /test/th :exit true)
 (import /test/route-test-helper)
 
@@ -46,8 +45,7 @@
               (let [input-body
                     {:body (-> (string test-files-dir-path "/" file-or-dir)
                                slurp
-                               eval-string
-                               json/encode)}
+                               eval-string)}
 
                     _throw-error-if-input-body-is-empty
                     (when (= (freeze input-body) {:body "null"})
@@ -72,7 +70,7 @@
                     _throw-error-if-expected-status-code-is-empty
                     (when (nil? (freeze expected-status-code))
                       (errorf "Please add an expected status code to %p" expected-status-code-file))
-                    
+
                     expected-output-body
                     (string
                       test-files-dir-path
