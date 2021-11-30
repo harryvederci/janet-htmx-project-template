@@ -1,5 +1,5 @@
-(import /deps/dotenv)
-(import /deps/http)
+(import dotenv)
+(import http)
 (import /lib/cipher)
 
 

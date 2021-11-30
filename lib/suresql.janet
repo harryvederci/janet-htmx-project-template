@@ -26,7 +26,7 @@
 (var- sqlite3/eval (fn [& args] (print "Could not find library sqlite3")))
 
 # NOTE: I changed this line because I put my dependencies in a project-local directory.
-(try! (import /deps/sqlite3))
+(try! (import sqlite3))
 
 (try! (import pq))
 

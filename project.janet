@@ -43,7 +43,7 @@
 # Start the server by running `jpm run server`
 (phony "server"
   []
-  (os/shell "janet main.janet"))
+  (os/shell "jpm -l janet main.janet"))
 
 # Start an nrepl client that Conjure (a Neovim plugin) can connect to.
 (phony "dev-repl-conjure"
@@ -60,11 +60,7 @@
 # by running `jpm run dev-server`
 (phony "dev-server"
   []
-  (os/shell "find . -name '*.janet' | entr -r janet main.janet"))
-
-(phony "dev-browser-auto-refresh-firefox"
-  []
-  (os/shell "find . -name '*.janet' | entr -r ,browser-refresh-tab firefox"))
+  (os/shell "find . -name '*.janet' | entr -r jpm -l janet main.janet"))
 
 
 (declare-executable

@@ -1,5 +1,5 @@
-(import /deps/circlet)
-(import /deps/dotenv)
+(import circlet)
+(import dotenv)
 (import /lib/tw)
 (import /src/middleware/mw-auth)
 (import /src/middleware/mw-body)

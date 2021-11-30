@@ -1,5 +1,5 @@
 (import ./tw/tailwind)
-(import /deps/path)
+(import path)
 
 (var- tw/styles @{})
 (var- tw/classes @{})

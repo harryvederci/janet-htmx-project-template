@@ -1,4 +1,4 @@
-(import /deps/dotenv)
+(import dotenv)
 (import /lib/cipher)
 
 

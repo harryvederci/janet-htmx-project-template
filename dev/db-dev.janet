@@ -1,4 +1,4 @@
-(import /deps/sqlite3)
+(import sqlite3)
 (import /src/db/db)
 (import /src/db/db-helper)
 

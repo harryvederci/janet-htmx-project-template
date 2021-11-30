@@ -1,4 +1,4 @@
-(import /deps/json)
+(import json)
 
 (defmacro for
   "kinda like `for` in Clojure."

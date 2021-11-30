@@ -1,4 +1,4 @@
-(import /deps/json)
+(import json)
 (import /src/db/db)
 (import /src/db/db-helper)
 (import /src/html-components/hc-todo-item-text)

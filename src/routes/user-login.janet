@@ -1,6 +1,6 @@
 (use /src/routes/route-paths)
 
-(import /deps/dotenv)
+(import dotenv)
 
 (import /src/db/db)
 (import /src/db/db-helper)

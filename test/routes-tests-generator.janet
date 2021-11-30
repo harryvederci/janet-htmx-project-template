@@ -1,7 +1,7 @@
 (use /src/routes/app-routes)
 (import /src/routes/app-routes)
 (import /src/utils/h)
-(import /deps/json)
+(import json)
 (import /test/th :exit true)
 (import /test/route-test-helper)
 

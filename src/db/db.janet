@@ -1,4 +1,4 @@
-(import /deps/sqlite3)
+(import sqlite3)
 (import /lib/suresql)
 
 (def db-path "dev/db-dev.sqlite")

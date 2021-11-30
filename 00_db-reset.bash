@@ -9,4 +9,4 @@ db_file=${dir_of_this_file}/dev/db-dev.sqlite
 rm ${db_file} || true
 touch ${db_file}
 
-janet -e "(import /dev/db-dev) (db-dev/migrate-and-seed)"
+jpm -l janet -e "(import /dev/db-dev) (db-dev/migrate-and-seed)"

@@ -5,8 +5,7 @@
 # LICENSE:    MIT
 
 
-## CHANGED from original: I prefixed jhydro with /deps/
-(import /deps/jhydro :prefix "")
+(import jhydro :prefix "")
 
 
 (def- context "cipher  ")
